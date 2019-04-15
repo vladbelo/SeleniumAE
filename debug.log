@@ -1,0 +1,6 @@
+[0415/012427.062:ERROR:file_io.cc(134)] WriteFile: There is not enough space on the disk. (0x70)
+[0415/012427.063:ERROR:crash_report_exception_handler.cc(111)] WriteEverything failed
+[0415/012427.063:ERROR:filesystem_win.cc(148)] DeleteFile C:\Users\vlad\AppData\Local\Temp\scoped_dir4580_11344\Crashpad\reports\a75c162f-2f83-47fd-812d-b1c23ac6afe9.dmp: The process cannot access the file because it is being used by another process. (0x20)
+[0415/012430.964:ERROR:file_io.cc(134)] WriteFile: There is not enough space on the disk. (0x70)
+[0415/012430.965:ERROR:crash_report_exception_handler.cc(111)] WriteEverything failed
+[0415/012432.432:ERROR:file_io.cc(134)] WriteFile: There is not enough space on the disk. (0x70)

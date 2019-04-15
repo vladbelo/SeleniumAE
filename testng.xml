@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+  <parameter name="browser" value= "Chrome" />
+    <classes>
+      <class name="com.seleniumae.exercise.TC_001_Verify_Page_Load_Google"/>
+    </classes>
+  </test> <!-- Test -->
+  <test thread-count="5" name="Test">
+  <parameter name="browser" value ="Firefox" />
+    <classes>
+      <class name="com.seleniumae.exercise.TC_001_Verify_Page_Load_Google"/>
+      <class name="com.seleniumae.exercise.TC_002_Verify_Search_Google_Page"/>
+      <class name="com.seleniumae.exercise.TC_003_Verify_RitchieBros_Page.java"/>
+    </classes>
+  </test> <!-- Test -->
+  <test thread-count="5" name="Test">
+  <parameter name="browser" value="InternetExplore" />
+    <classes>
+      <class name="com.seleniumae.exercise.TC_001_Verify_Page_Load_Google"/>
+    </classes>
+  </test> <!-- Test -->
+  
+</suite> <!-- Suite -->
