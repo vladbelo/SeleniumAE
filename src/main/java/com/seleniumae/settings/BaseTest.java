@@ -3,26 +3,20 @@ package com.seleniumae.settings;
  * Author Vladimir Belonenko 04/16/2019 
  */
 
-import java.net.MalformedURLException;
-import java.net.URL;
 import java.util.concurrent.TimeUnit;
 
-import org.openqa.selenium.Platform;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
-import org.openqa.selenium.firefox.FirefoxOptions;
+
 import org.openqa.selenium.firefox.FirefoxProfile;
-import org.openqa.selenium.remote.DesiredCapabilities;
+
 import org.openqa.selenium.support.ui.Wait;
 import org.testng.annotations.AfterMethod;
 
-
 public class BaseTest {
-
-	DesiredCapabilities capabilties;
 
 	public static Wait<WebDriver> wait;
 	public static String url;
@@ -43,16 +37,16 @@ public class BaseTest {
 			driver = new FirefoxDriver();
 
 			driver.get(Url);
+
 		}
 		// Check if parameter passed as 'chrome'
 		else if (browser.equalsIgnoreCase("chrome")) {
 			// set path to chromedriver.exe
-			System.setProperty("webdriver.chrome.driver",
-					"C:\\Users\\vlad\\Documents\\BasicNightWatch\\lib\\drivers\\chromedriver.exe");
+			System.setProperty("webdriver.chrome.driver", "C:\\Drivers\\chromedriver.exe");
 
 			ChromeOptions options = new ChromeOptions();
 			options.addArguments("--enable-automation", "test-type=browser", "--disable-plugins", "--disable-infobars",
-					"--disable-notifications");
+					"--disable-notifications", "start-maximized");
 			driver = new ChromeDriver(options);
 			driver.get(Url);
 
@@ -68,7 +62,7 @@ public class BaseTest {
 			// If no browser passed throw exception
 			throw new Exception("Browser is not correct");
 		}
-		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		 driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 
 	}
 

@@ -45,11 +45,16 @@ SeleniumAU Structure.
 │           └── testng.xml
 │               
 
+![Alt text](relative/path/to/maven.pgf?raw=true "Title")
+
 
 Configuration Example: 
 
 Testng.xml file  Running my test cases in different browsers.
 
+
+
+![Alt text](relative/path/to/ScreenShot.gif?raw=true "Title")
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Suite">

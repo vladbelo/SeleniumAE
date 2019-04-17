@@ -2,12 +2,12 @@
 <testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="9338" started-at="2019-04-15T16:05:22Z" finished-at="2019-04-15T16:05:31Z">
+  <suite name="Default suite" duration-ms="8739" started-at="2019-04-17T07:11:30Z" finished-at="2019-04-17T07:11:39Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="9338" started-at="2019-04-15T16:05:22Z" finished-at="2019-04-15T16:05:31Z">
+    <test name="Default test" duration-ms="8739" started-at="2019-04-17T07:11:30Z" finished-at="2019-04-17T07:11:39Z">
       <class name="com.seleniumae.exercise.TC_002_Verify_Search_On_Google">
-        <test-method status="FAIL" signature="Google_Search_Links()[pri:0, instance:com.seleniumae.exercise.TC_002_Verify_Search_On_Google@4678c730]" name="Google_Search_Links" duration-ms="9316" started-at="2019-04-15T16:05:22Z" finished-at="2019-04-15T16:05:31Z">
+        <test-method status="FAIL" signature="Google_Search_Links()[pri:0, instance:com.seleniumae.exercise.TC_002_Verify_Search_On_Google@4678c730]" name="Google_Search_Links" duration-ms="8715" started-at="2019-04-17T07:11:30Z" finished-at="2019-04-17T07:11:38Z">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected [Expected all test steps to pass.] but found [A test step has failed: java.lang.NullPointerException]]]>
@@ -20,7 +20,7 @@ at org.testng.Assert.assertEqualsImpl(Assert.java:137)
 at org.testng.Assert.assertEquals(Assert.java:118)
 at org.testng.Assert.assertEquals(Assert.java:453)
 at org.testng.Assert.assertEquals(Assert.java:463)
-at com.seleniumae.exercise.TC_002_Verify_Search_On_Google.Google_Search_Links(TC_002_Verify_Search_On_Google.java:44)
+at com.seleniumae.exercise.TC_002_Verify_Search_On_Google.Google_Search_Links(TC_002_Verify_Search_On_Google.java:41)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -52,7 +52,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Google_Search_Links -->
-        <test-method status="FAIL" signature="tearDown(org.openqa.selenium.WebDriver)[pri:0, instance:com.seleniumae.exercise.TC_002_Verify_Search_On_Google@4678c730]" name="tearDown" is-config="true" duration-ms="0" started-at="2019-04-15T16:05:31Z" finished-at="2019-04-15T16:05:31Z">
+        <test-method status="FAIL" signature="tearDown(org.openqa.selenium.WebDriver)[pri:0, instance:com.seleniumae.exercise.TC_002_Verify_Search_On_Google@4678c730]" name="tearDown" is-config="true" duration-ms="0" started-at="2019-04-17T07:11:38Z" finished-at="2019-04-17T07:11:38Z">
           <exception class="org.testng.TestNGException">
             <message>
               <![CDATA[

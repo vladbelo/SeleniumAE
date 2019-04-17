@@ -10,30 +10,27 @@ import com.seleniumae.settings.WebConstants;
 
 public class TC_002_Verify_Search_On_Google extends BaseTest {
 	WebDriver driver;
-	
-  @Test
-  public void Google_Search_Links() {
-	  try {
-			System.out.println("Verify_that_Google_Page_Loads_Successfully_TEST() test case...");
-			// WebDriver driver;
 
-			WebConstants web = new WebConstants();
+	@Test
+	public void Google_Search_Links() {
+		try {
+			System.out.println("Verify_that_Google_Page_Loads_Successfully_TEST() test case...");
+
 			BaseTest base = new BaseTest();
 			Google_Home_Page home = new Google_Home_Page(driver);
 
 			// 1. Open Browser Chrome
 			// 2. Go TO: Google.com
 			base.startDriver("chrome", "http://www.google.com/");
-			
+
 			WebConstants.SetDelay(5000);
-			
-			
+
 			// 3. Search for Mobile Integration Workgroup
 			home.selectSearchBox("mobile integration workgroup");
-			
-			//4. Verify the first Link is 
+
+			// 4. Verify the first Link is
 			home.linkSearch("https://miwtech.com/", 1);
-			
+
 			// FINISH and CLEAN UP
 			System.out.println("Finished with Verify_that_Google_Link_Passed_TEST() test run!");
 
@@ -44,4 +41,4 @@ public class TC_002_Verify_Search_On_Google extends BaseTest {
 			Assert.assertEquals("A test step has failed: " + ee, "Expected all test steps to pass.");
 		}
 	}
-  }
+}

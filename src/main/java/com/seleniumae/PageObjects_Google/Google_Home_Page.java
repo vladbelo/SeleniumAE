@@ -10,7 +10,8 @@ import org.openqa.selenium.WebElement;
 
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 
 import com.seleniumae.settings.WebConstants;
@@ -41,32 +42,44 @@ public class Google_Home_Page {
 	private WebElement Search_Buttons;
 
 	private static final String SEARCHLINKS = "//*[@id=\"rso\"]/div/div";
-	@FindBy(xpath = SEARCHLINKS)
+	@FindBy(xpath = SEARCHLINKS)   
 	private WebElement SearchLinks_Page;
+	
+	
 
 	private static final String GOOGLETEXT = "//*[@id=\"hplogo\"]";
 	@FindBy(xpath = GOOGLETEXT)
 	private WebElement GoogleTextLogo;
+	
 
 	/**
 	 * Google Page Methods
 	 */
-	public void verify_GooglePage() {
-
-		WebConstants.waitForElementToLoad(driver, SearchText_Engine, 30);
-		WebConstants.SetDelay(1000);
-		Assert.assertEquals(SearchText_Engine.isEnabled(), true, "Google Logo Exist");
-		// Log.log(driver).info("Google Page is Verified");
+	public void verify_GoogleLogo() {
+		WebConstants.waitForElementToLoad(driver,  GoogleTextLogo, 60);
+		Assert.assertEquals( GoogleTextLogo.isEnabled(), true, "Google Logo Exist");
+		System.out.println("Google Page Verified");
 		WebConstants.SetDelay(1000);
 	}
 
 //  Selecting Google Search Text :
 	public void selectSearchBox(String type) {
 		System.out.println("Verify Search Engine Text");
+		SearchText_Engine.click();
 		SearchText_Engine.sendKeys(type);
 		SearchText_Engine.sendKeys(Keys.ENTER);
 		System.out.println("Success Passed");
 
+	}
+	
+	public void verifyGoolgePage()
+	{
+	    new WebDriverWait(driver, 30).until(ExpectedConditions.titleContains("Google"));
+	    String home = "Google";
+	    if (driver.getTitle().equalsIgnoreCase(home))
+	        System.out.println("Its the correct Google Page");
+	    else
+	        System.out.println("Not a Goolge Page");
 	}
 
 	// Select First Link
