@@ -24,28 +24,8 @@ Step 7: Jenkins Optional
 You need to click on the Help->Install New Software. Enter http://download.eclipse.org/technology/m2e/releases in ‘Work with’ an click on Add.
 Select Maven plugin. Click on Next and then Finish.
 
-SeleniumAU Structure.
-├── bin
-│   ├── safaridriver.exe
-│   └── chromedriver.exe
-├── src
-│   ├── main
-│   │   └── java
-│   └── test
-│       ├── java
-│       │   ├── package
-│       │   │   └──  Test Case 001
-│       │   ├── package
-│       │   │   └── Test Case 002 
-│       │   └── package
-│       │       ├── Test Case 003
-│       │       
-│       └── others
-│           ├── Pom.xml
-│           └── testng.xml
-│               
+![Capture](https://user-images.githubusercontent.com/3719297/56313769-44001700-6108-11e9-84c5-584e7d710697.GIF)
 
-![Alt text](relative/path/to/maven.pgf?raw=true "Title")
 
 
 Configuration Example: 
@@ -54,36 +34,8 @@ Testng.xml file  Running my test cases in different browsers.
 
 
 
-![Alt text](relative/path/to/ScreenShot.gif?raw=true "Title")
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Suite">
-  <test thread-count="5" name="Test">
-  <parameter name="browser" value= "Chrome" />
-    <classes>
-      <class name="com.seleniumae.exercise.TC_001_Verify_Page_Load_Google"/>
-      <class name="com.seleniumae.exercise.TC_002_Verify_Search_Google_Page"/>
-      <class name="com.seleniumae.exercise.TC_003_Verify_RitchieBros_Page.java"/>
-    </classes>
-  </test> <!-- Test -->
-  <test thread-count="5" name="Test">
-  <parameter name="browser" value ="Firefox" />
-    <classes>
-     <class name="com.seleniumae.exercise.TC_001_Verify_Page_Load_Google"/>
-      <class name="com.seleniumae.exercise.TC_002_Verify_Search_Google_Page"/>
-      <class name="com.seleniumae.exercise.TC_003_Verify_RitchieBros_Page.java"/>
-    </classes>
-  </test> <!-- Test -->
-  <test thread-count="5" name="Test">
-  <parameter name="browser" value="InternetExplore" />
-    <classes>
-     <class name="com.seleniumae.exercise.TC_001_Verify_Page_Load_Google"/>
-      <class name="com.seleniumae.exercise.TC_002_Verify_Search_Google_Page"/>
-      <class name="com.seleniumae.exercise.TC_003_Verify_RitchieBros_Page.java"/>
-    </classes>
-  </test> <!-- Test -->
-  
-</suite> <!-- Suite --
+
+![Capture1](https://user-images.githubusercontent.com/3719297/56313786-4d897f00-6108-11e9-89f7-0ffbc101386e.GIF)
 
 Running the tests
 
