@@ -5,6 +5,7 @@ import java.net.MalformedURLException;
 import org.openqa.selenium.WebDriver;
 
 import org.testng.Assert;
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Optional;
 import org.testng.annotations.Parameters;
@@ -22,11 +23,9 @@ public class TC_001_Loading_Google_Page {
 
 	@BeforeClass(alwaysRun = true)
 	@Parameters({ "browser", "url" })
-	public void setUp(@Optional String browser, @Optional String url) throws MalformedURLException {
+	public void setUp(@Optional("browser") String browser, @Optional("url") String url) {
 		BaseTest base = new BaseTest(browser, url);
 		driver = base.getDriver();
-
-		// driver = setupTestDriver.getDriver();
 
 	}
 
@@ -34,16 +33,14 @@ public class TC_001_Loading_Google_Page {
 	public void Verify_Google_Page_Loads_Successffully() {
 		try {
 			System.out.println("Verify_that_Google_Page_Loads_Successfully_TEST() test case...");
-
-			Assert.assertTrue(driver.getTitle().contentEquals("Google"));
+			Google_Home_Page home = new Google_Home_Page(driver);
 
 			// 1. Open Browser Chrome
 			// 2. Go TO: Google.com
-			// base.startDriver("Chrome", "https://www.google.com");
-			Thread.sleep(1500);
 
 			// 3. Verify Page is Loaded Successfully
-
+			home.verifyGoolgePage();
+			//Assert.assertTrue(driver.getTitle().contentEquals("Google"));
 			// FINISH and CLEAN UP
 			System.out.println("Finished with Verify_that_Google_Page_Loads_Successfully_TEST() test run!");
 
@@ -53,5 +50,10 @@ public class TC_001_Loading_Google_Page {
 			// Intentionally fail the test if any step triggers an exception
 			Assert.assertEquals("A test step has failed: " + ee, "Expected all test steps to pass.");
 		}
+	}
+
+	@AfterClass(alwaysRun = true)
+	public void closeBrowser() {
+		driver.quit();
 	}
 }

@@ -2,26 +2,36 @@ package com.seleniumae.exercise;
 
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Optional;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import com.seleniumae.PageObjects_rbAuction.RB_Auction_Page;
 import com.seleniumae.settings.BaseTest;
 import com.seleniumae.settings.WebConstants;
 
-public class TC_003_Verify_RitchieBros_Page extends BaseTest {
+public class TC_003_Verify_RitchieBros_Page {
 	WebDriver driver;
+
+	@BeforeClass(alwaysRun = true)
+	@Parameters({ "browser", "url" })
+	public void setUp(@Optional("browser") String browser, @Optional("url") String url) {
+		BaseTest base = new BaseTest(browser, url);
+		driver = base.getDriver();
+
+	}
 
 	@Test
 	public void Richie_Bros_Site() {
 		try {
-			System.out.println("Verify_that_Google_Page_Loads_Successfully_TEST() test case...");
+			System.out.println("Verify_that_Ritchie_Bros_Passes_TEST() test case...");
 
-			BaseTest base = new BaseTest();
+			// BaseTest base = new BaseTest();
 			RB_Auction_Page ritchie = new RB_Auction_Page(driver);
 
 			// 1. Open Browser Chrome
 			// 2. Go TO: "https://www.rbauction.com
-			base.startDriver("firefox", "https://www.rbauction.com");
 			WebConstants.SetDelay(3000);
 
 			// 3. Select Search Menu

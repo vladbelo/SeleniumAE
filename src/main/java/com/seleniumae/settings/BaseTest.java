@@ -33,8 +33,7 @@ public class BaseTest {
 		// Check if parameter passed from TestNG is 'firefox'
 		if (browser.equalsIgnoreCase("firefox")) {
 			// create firefox instance
-			System.setProperty("webdriver.firefox.marionette",
-					"C:\\Users\\vlad\\Downloads\\Selenium_Basics\\geckodriver.exe");
+			System.setProperty("webdriver.gecko.driver", "C:\\Drivers\\geckodriver.exe");
 
 			final FirefoxProfile firefox = new FirefoxProfile();
 			firefox.setPreference("xpinstall.signatures.required", false);

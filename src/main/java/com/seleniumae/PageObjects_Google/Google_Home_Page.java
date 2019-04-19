@@ -3,7 +3,7 @@ package com.seleniumae.PageObjects_Google;
 import java.util.List;
 
 import org.openqa.selenium.By;
-
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -19,6 +19,9 @@ import com.seleniumae.settings.WebConstants;
 public class Google_Home_Page {
 
 	private WebDriver driver;
+	private WebDriverWait wait10;
+	private WebDriverWait wait40;
+	JavascriptExecutor executor;
 
 	/**
 	 * Constructor
@@ -27,6 +30,9 @@ public class Google_Home_Page {
 	 */
 	public Google_Home_Page(final WebDriver driver) {
 		this.driver = driver;
+		this.executor = (JavascriptExecutor) this.driver;
+	    this.wait10 = new WebDriverWait(driver, 10);
+	    this.wait40 = new WebDriverWait(driver, 40);
 		PageFactory.initElements(driver, WebConstants.IMPLICITLY_WAIT_TIMEOUT);
 	}
 
@@ -63,11 +69,10 @@ public class Google_Home_Page {
 	}
 
 //  Selecting Google Search Text :
-	public void selectSearchBox(String type) {
+	public void selectSearchBox() {
 		System.out.println("Verify Search Engine Text");
-		SearchText_Engine.click();
-		SearchText_Engine.sendKeys(type);
-		SearchText_Engine.sendKeys(Keys.ENTER);
+		executor.executeScript("argument[0].click();", this.SearchText_Engine);
+		executor.executeScript("document.getElementById('tsf').value='mobile integration workgroup'");
 		System.out.println("Success Passed");
 
 	}

@@ -1,75 +1,94 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="1" failed="0" ignored="0" total="1" passed="0">
+<testng-results skipped="0" failed="2" ignored="0" total="3" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="47" started-at="2019-04-18T15:42:12Z" finished-at="2019-04-18T15:42:12Z">
+  <suite name="Suite" duration-ms="22285" started-at="2019-04-19T04:21:22Z" finished-at="2019-04-19T04:21:45Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="47" started-at="2019-04-18T15:42:12Z" finished-at="2019-04-18T15:42:12Z">
+    <test name="Test" duration-ms="13491" started-at="2019-04-19T04:21:22Z" finished-at="2019-04-19T04:21:36Z">
       <class name="com.seleniumae.exercise.TC_001_Loading_Google_Page">
-        <test-method status="FAIL" signature="setUp(java.lang.String, java.lang.String)[pri:0, instance:com.seleniumae.exercise.TC_001_Loading_Google_Page@42d80b78]" name="setUp" is-config="true" duration-ms="25" started-at="2019-04-18T15:42:12Z" finished-at="2019-04-18T15:42:12Z">
+        <test-method status="PASS" signature="setUp(java.lang.String, java.lang.String)[pri:0, instance:com.seleniumae.exercise.TC_001_Loading_Google_Page@5c3bd550]" name="setUp" is-config="true" duration-ms="5068" started-at="2019-04-19T04:21:22Z" finished-at="2019-04-19T04:21:27Z">
           <params>
             <param index="0">
-              <value is-null="true"/>
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
             </param>
             <param index="1">
-              <value is-null="true"/>
+              <value>
+                <![CDATA[https://www.google.com/]]>
+              </value>
             </param>
           </params>
-          <exception class="java.lang.NullPointerException">
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException
-at com.seleniumae.settings.BaseTest.<init>(BaseTest.java:34)
-at com.seleniumae.exercise.TC_001_Loading_Google_Page.setUp(TC_001_Loading_Google_Page.java:26)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.lang.reflect.Method.invoke(Method.java:498)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
-at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
-at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
-at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
-at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:168)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:105)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="SKIP" signature="Verify_Google_Page_Loads_Successffully()[pri:0, instance:com.seleniumae.exercise.TC_001_Loading_Google_Page@42d80b78]" name="Verify_Google_Page_Loads_Successffully" duration-ms="0" started-at="2019-04-18T15:42:12Z" finished-at="2019-04-18T15:42:12Z">
-          <exception class="java.lang.NullPointerException">
+        <test-method status="PASS" signature="Verify_Google_Page_Loads_Successffully()[pri:0, instance:com.seleniumae.exercise.TC_001_Loading_Google_Page@5c3bd550]" name="Verify_Google_Page_Loads_Successffully" duration-ms="85" started-at="2019-04-19T04:21:27Z" finished-at="2019-04-19T04:21:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Verify_Google_Page_Loads_Successffully -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:com.seleniumae.exercise.TC_001_Loading_Google_Page@5c3bd550]" name="closeBrowser" is-config="true" duration-ms="584" started-at="2019-04-19T04:21:27Z" finished-at="2019-04-19T04:21:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- com.seleniumae.exercise.TC_001_Loading_Google_Page -->
+      <class name="com.seleniumae.exercise.TC_002_Verify_Search_On_Google">
+        <test-method status="PASS" signature="setUp(java.lang.String, java.lang.String)[pri:0, instance:com.seleniumae.exercise.TC_002_Verify_Search_On_Google@91161c7]" name="setUp" is-config="true" duration-ms="4595" started-at="2019-04-19T04:21:28Z" finished-at="2019-04-19T04:21:33Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[https://www.google.com/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="FAIL" signature="Google_Search_Links()[pri:0, instance:com.seleniumae.exercise.TC_002_Verify_Search_On_Google@91161c7]" name="Google_Search_Links" duration-ms="3111" started-at="2019-04-19T04:21:33Z" finished-at="2019-04-19T04:21:36Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [Expected all test steps to pass.] but found [A test step has failed: org.openqa.selenium.WebDriverException: unknown error: argument is not defined
+  (Session info: chrome=73.0.3683.103)
+  (Driver info: chromedriver=2.24.417431 (9aea000394714d2fbb20850021f6204f2256b9cf),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:48'
+System info: host: 'LAPTOP-RLAR81NJ', ip: '10.107.73.130', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_171'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptSslCerts: true, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.24.417431 (9aea000394714d..., userDataDir: C:\Users\vlad\AppData\Local...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, takesHeapSnapshot: true, takesScreenshot: true, version: 73.0.3683.103, webStorageEnabled: true}
+Session ID: f7d6c0931b53276442b5a5e3abdcc55d]]]>
+            </message>
             <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException
-at com.seleniumae.settings.BaseTest.<init>(BaseTest.java:34)
-at com.seleniumae.exercise.TC_001_Loading_Google_Page.setUp(TC_001_Loading_Google_Page.java:26)
+              <![CDATA[java.lang.AssertionError: expected [Expected all test steps to pass.] but found [A test step has failed: org.openqa.selenium.WebDriverException: unknown error: argument is not defined
+  (Session info: chrome=73.0.3683.103)
+  (Driver info: chromedriver=2.24.417431 (9aea000394714d2fbb20850021f6204f2256b9cf),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:48'
+System info: host: 'LAPTOP-RLAR81NJ', ip: '10.107.73.130', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_171'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptSslCerts: true, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.24.417431 (9aea000394714d..., userDataDir: C:\Users\vlad\AppData\Local...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, takesHeapSnapshot: true, takesScreenshot: true, version: 73.0.3683.103, webStorageEnabled: true}
+Session ID: f7d6c0931b53276442b5a5e3abdcc55d]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+at org.testng.Assert.assertEquals(Assert.java:118)
+at org.testng.Assert.assertEquals(Assert.java:453)
+at org.testng.Assert.assertEquals(Assert.java:463)
+at com.seleniumae.exercise.TC_002_Verify_Search_On_Google.Google_Search_Links(TC_002_Verify_Search_On_Google.java:54)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 at java.lang.reflect.Method.invoke(Method.java:498)
 at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
-at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
-at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
-at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
-at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:168)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:105)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
 at org.testng.TestRunner.privateRun(TestRunner.java:648)
 at org.testng.TestRunner.run(TestRunner.java:505)
 at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
@@ -87,11 +106,76 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Verify_Google_Page_Loads_Successffully -->
-      </class> <!-- com.seleniumae.exercise.TC_001_Loading_Google_Page -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        </test-method> <!-- Google_Search_Links -->
+      </class> <!-- com.seleniumae.exercise.TC_002_Verify_Search_On_Google -->
+    </test> <!-- Test -->
+    <test name="Test1" duration-ms="8629" started-at="2019-04-19T04:21:36Z" finished-at="2019-04-19T04:21:45Z">
+      <class name="com.seleniumae.exercise.TC_003_Verify_RitchieBros_Page">
+        <test-method status="PASS" signature="setUp(java.lang.String, java.lang.String)[pri:0, instance:com.seleniumae.exercise.TC_003_Verify_RitchieBros_Page@42dafa95]" name="setUp" is-config="true" duration-ms="5604" started-at="2019-04-19T04:21:36Z" finished-at="2019-04-19T04:21:42Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[https://www.rbauction.com/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="FAIL" signature="Richie_Bros_Site()[pri:0, instance:com.seleniumae.exercise.TC_003_Verify_RitchieBros_Page@42dafa95]" name="Richie_Bros_Site" duration-ms="3020" started-at="2019-04-19T04:21:42Z" finished-at="2019-04-19T04:21:45Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [Expected all test steps to pass.] but found [A test step has failed: java.lang.NullPointerException]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [Expected all test steps to pass.] but found [A test step has failed: java.lang.NullPointerException]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+at org.testng.Assert.assertEquals(Assert.java:118)
+at org.testng.Assert.assertEquals(Assert.java:453)
+at org.testng.Assert.assertEquals(Assert.java:463)
+at com.seleniumae.exercise.TC_003_Verify_RitchieBros_Page.Richie_Bros_Site(TC_003_Verify_RitchieBros_Page.java:63)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Richie_Bros_Site -->
+      </class> <!-- com.seleniumae.exercise.TC_003_Verify_RitchieBros_Page -->
+    </test> <!-- Test1 -->
+  </suite> <!-- Suite -->
 </testng-results>

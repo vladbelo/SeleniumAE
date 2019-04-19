@@ -3,12 +3,12 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.seleniumae.exercise.TC_001_Loading_Google_Page">
+      <class name="com.seleniumae.exercise.TC_002_Verify_Search_On_Google">
         <methods>
+          <include name="Google_Search_Links"/>
           <include name="setUp"/>
-          <include name="Verify_Google_Page_Loads_Successffully"/>
         </methods>
-      </class> <!-- com.seleniumae.exercise.TC_001_Loading_Google_Page -->
+      </class> <!-- com.seleniumae.exercise.TC_002_Verify_Search_On_Google -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
