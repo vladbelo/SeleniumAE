@@ -53,6 +53,10 @@ public class RB_Auction_Page {
 	@FindBy(xpath = SUBMIT)
 	private WebElement SubmitButton;
 
+	private static final String SUBMITs = "//*[@id=\"adv-submit-button\"]";
+	@FindBy(xpath = SUBMITs)
+	private WebElement SubmitButtons;
+
 	// Select Search Button
 	public void clickSearchMenu() throws TestException {
 		WebConstants.waitForElementToLoad(driver, SearchDownButton, 30);
